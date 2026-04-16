@@ -1,0 +1,22 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Custom scrollbar — dark theme */
+::-webkit-scrollbar       { width: 6px; height: 6px; }
+::-webkit-scrollbar-track { background: #111118; }
+::-webkit-scrollbar-thumb { background: #374151; border-radius: 3px; }
+::-webkit-scrollbar-thumb:hover { background: #4b5563; }
+
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Subtle radial gradient for the login page */
+.login-bg {
+  background:
+    radial-gradient(ellipse at 60% 0%,  rgba(59,130,246,0.08) 0%, transparent 60%),
+    radial-gradient(ellipse at 0%  80%, rgba(16,185,129,0.05) 0%, transparent 50%),
+    #0a0a0f;
+}
